@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js">
+    <style>
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  -->
+    <form action="" class="container shadow my-5 p-3">
+        <input type="text" class="form-control">
+        <p id="response"></p>
+        <button type="button" class="btn btn-dark" mt-5 onclick="process_form()">Submit</button>
+    </form>
+
+
+    <!--  -->
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <button type="button" onclick="sum(4,5)">Click 1</button>
+    <button type="button" onclick="sum(9,2)">Click 2</button>
+    <button type="button" onclick="sum(10,34)">Click 3</button>
+    <div></div>
+    <i>Welcome</i>
+    <i style="color: red;">Lorem ipsum dolor sit.</i>
+    <div class="mysecdiv"></div>
+
+    <!-- 
+    assignment:
+        1. Create a pro' that takes a temperature as a number and return cold or hot if temperature is >30
+        2. Create a pro' that takes 2 numbers a and b and return the sum
+        3. Create a password toggle
+
+      -->
+
+    <!-- Solution -->
+      <p id="temp"></p>
+      <button id="btn-temp" type="button" onclick="tempfunction()">Check the Temperature</button>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+<script>
+    document.writeln("<p>I espected it to be on top</p>")
+    console.log("script is awesome");
+    document.writeln("<b>Solomon</b>");
+    // alert("Wecome to my site");
+    document.querySelector('#demo').innerHTML = "A new line text";
+    document.writeln("<p style = 'color:blue'>Solomon</p>");
+    colors = ['red', 'blue', 'purple', 'pink']
+    colors.forEach((c, i) => {
+        document.write(` ${i + 1}. ${c} <br>`)
+
+    });
+
+    tmp = 20;
+    document.write(tmp >= 30 ? "<span style ='color:red'>Hot</span>" : "<span style ='color:blue'>Cold</span> <br>");
+    document.writeln(document)
+    document.querySelector('#demo2').innerHTML = "id selector"
+    // document.querySelector('div').innerHTML ="tag selector"
+    document.writeln("<p>You can use it to write a paragraph like this and you can style in the style</p>")
+    const mydiv = document.querySelector('div');
+    mydiv.innerHTML = " Some new text";
+    mydiv.style.fontSize = "30px"
+    mydiv.style.color = "red"
+    mydiv.id = "demo4"
+    mydiv.className = "my-container"
+    function sum(x, y) {
+        mysecdiv = document.querySelector('.mysecdiv')
+        mysecdiv.innerHTML = (x + y)
+        mysecdiv.style.color = "red";
+        mysecdiv.style.fontSize = "30px";
+    }
+    sum("click the ", " button above")
+    food = "rice";
+    // document.writeln(food == "ride"? 
+    function process_form() {
+        let fullname = document.querySelector('form input').value;
+        document.querySelector('#response').innerText = `Welcome ${fullname}`
+    }
+
+    
+
+    // assignment solution
+</script>
+
+
+</html>
